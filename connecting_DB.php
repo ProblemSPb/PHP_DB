@@ -34,4 +34,34 @@ function get_products_title($id) {
     return $result;
 }
 
+function all_price() {
+  return 
+  ['1' => [
+    'price' => 100
+  ],
+
+  '2' => [
+    'price' => 200
+  ],
+
+  '3' => [
+    'price' => 300
+  ],
+
+  '4' => [
+    'price' => 400
+  ],
+
+  '5' => [
+    'price' => 500
+  ]];
+}
+
+function get_price($id){
+  $products_price = all_price();
+  $result = $products_price[$id]['price'];
+  return $result;
+}
+
+
 ?>
